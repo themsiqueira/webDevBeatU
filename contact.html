@@ -12,11 +12,17 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script>
       $(document).ready(function(){
+
         $(".close").click(function(){
           $("#myAlert").alert("close");
         });
+
+        $("#form").click(function(){
+          $("#myAlert").show();
+        });
       });
-      </script>
+
+    </script>
 
     <title>BeatU - Ajudando você a superar limites</title>
     <link href="about.css" rel="stylesheet">
@@ -28,7 +34,7 @@
     <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
       <header class="masthead mb-auto">
         <div class="inner">
-          <h3 class="masthead-brand">#BeatU</h3>
+          <h3 class="masthead-brand"><a href="./index.html">#BeatU</a></h3>
           <nav class="nav nav-masthead justify-content-center">
             <a class="nav-link " href="./index.html">Home</a>
             <a class="nav-link" href="./about.html">Sobre</a>
@@ -55,13 +61,13 @@
                       <input type="text" class="form-control form-control-lg my-2" id="colFormLabelLg" placeholder="Assunto">
                       <textarea class="form-control form-control-lg my-2" rows="5" id="comment" placeholder="Fala pra gente como podemos te ajudar?"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-warning">Enviar</button>
+                    <button type="button" class="btn btn-warning" id="form">Enviar</button>
                   </form>
                 </div>
               </div>
-              <div class="alert alert-success alert-dismissible" id="myAlert">
-                <button type="button" class="close">&times;</button>
-                <strong>Success!</strong> This alert box could indicate a successful or positive action.
+              <div class="alert alert-success alert-dismissible my-4" id="myAlert" style="display: none;">
+                <a href="./index.html" class="close">&times;</a>
+                <strong>Sucesso!</strong> Aguarde nosso retorno, em seu e-mail informado.
               </div>
             </div>
           </div>
