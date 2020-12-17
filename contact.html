@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="./aventureiro.png"/>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $(".close").click(function(){
+          $("#myAlert").alert("close");
+        });
+      });
+      </script>
+
+    <title>BeatU - Ajudando você a superar limites</title>
+    <link href="about.css" rel="stylesheet">
+  </head>
+
+
+  <body class="text-center">
+
+    <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">#BeatU</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link " href="./index.html">Home</a>
+            <a class="nav-link" href="./about.html">Sobre</a>
+            <a class="nav-link" href="./jobs.html">Soluções</a>
+            <a class="nav-link active" href="./contact.html">Contato</a>
+          </nav>
+        </div>
+      </header>
+
+      <main role="main">
+        <div class="container">
+          <div class="card border-0 shadow my-5">
+            <div class="card-body p-5">
+
+              <div class="row featurette text-body">
+                <div class="col-md-5 d-flex align-self-center">
+                  <img class="featurette-image img-fluid mx-auto" src="./email.png" style="width: 400px; height: 400px;"/>
+                </div>
+                <div class="col-md-7">
+                  <h2 class="featurette-heading">Entre em contato. <span class="text-muted">E vamos superar suas expectativas!</span></h2>
+                  <form class="d-flex flex-column justify-content-end">
+                    <div class="form-group p-3 row">
+                      <input type="email" class="form-control form-control-lg my-2" id="colFormLabelLg" placeholder="E-mail">
+                      <input type="text" class="form-control form-control-lg my-2" id="colFormLabelLg" placeholder="Assunto">
+                      <textarea class="form-control form-control-lg my-2" rows="5" id="comment" placeholder="Fala pra gente como podemos te ajudar?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-warning">Enviar</button>
+                  </form>
+                </div>
+              </div>
+              <div class="alert alert-success alert-dismissible" id="myAlert">
+                <button type="button" class="close">&times;</button>
+                <strong>Success!</strong> This alert box could indicate a successful or positive action.
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="mastfoot mt-auto">
+        <div class="inner">
+          <p>BeatU, by <a href="https://github.com/themsiqueira">@themsiqueira</a>.</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
